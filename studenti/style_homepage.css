@@ -1,0 +1,87 @@
+/* Secțiunea Principală "Hero" */
+.hero {
+    height: 70vh;
+    /* Asigură-te că folderul 'imagini' există și conține fișierul tău */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imagini/719472-21316260-2560-1440.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h2 {
+    font-size: 3.5em;
+    color: #ff0000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 30px;
+    /* Adaugă aceste două linii pentru centrare */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #e60000;
+    transform: translateY(-3px);
+}
+
+/* Secțiunea de Prezentare "Features" */
+.features {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    color: #ff0000;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    border-top: 4px solid #ff0000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}

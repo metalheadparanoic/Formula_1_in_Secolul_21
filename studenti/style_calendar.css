@@ -1,0 +1,103 @@
+/* Stiluri specifice paginii de Calendar */
+
+/* Titlul paginii (consistent) */
+.page-title {
+    text-align: center;
+    padding: 40px 20px;
+}
+.page-title h2 {
+    font-size: 3em;
+    color: #ff0000;
+    text-transform: uppercase;
+    margin: 0;
+}
+.page-title p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+/* Lista de curse (container principal) */
+.calendar-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px 50px;
+}
+
+/* Cardul individual al cursei */
+.race-item {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex; /* Aliniază conținutul și harta */
+    overflow: hidden; /* Important pentru border-radius */
+    
+    /* FIX pentru bug-ul de culoare (ca la piloti) */
+    border-width: 2px; 
+    border-style: solid;
+    border-color: #222; 
+    
+    /* Tranziția include acum și border-color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Conținutul principal (stânga) */
+.race-content {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    flex-grow: 1; /* Ocupă spațiul disponibil */
+}
+
+.race-round {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff0000;
+    margin-right: 25px;
+}
+
+.race-details {
+    flex-grow: 1; /* Ocupă spațiul din mijloc */
+}
+
+.race-details h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.6em; /* Mărit puțin pentru emoji */
+    color: #ffffff;
+}
+
+.race-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.race-date {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffffff;
+    min-width: 120px; /* Lățime minimă */
+    text-align: right;
+}
+
+/* Containerul hărții circuitului (dreapta) */
+.race-track {
+    flex-basis: 250px; /* Lățime fixă */
+    flex-shrink: 0;
+    background-color: #111; /* Fundal întunecat pentru hartă */
+}
+
+.race-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 'contain' e cel mai bun pt hărți */
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0.6; /* Efect subtil */
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+/* Efect de hover pe imaginea hărții */
+.race-item:hover .race-track img {
+    opacity: 1;
+}
