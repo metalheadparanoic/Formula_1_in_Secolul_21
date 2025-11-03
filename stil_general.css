@@ -1,0 +1,255 @@
+/* =================================
+   STIL GENERAL (partajat pe tot site-ul)
+   ================================= */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header și Navigație */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(18, 18, 18, 0.8);
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 a {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+.login-btn {
+    background-color: #ff0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #e60000;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+}
+
+/* Când dăm hover pe un card, îl ridicăm și îi setăm o umbră colorată */
+.driver-card:hover,
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Definim culorile */
+.team-mclaren:hover {
+    border-color: #FF8700;
+    box-shadow: 0 10px 25px rgba(255, 135, 0, 0.4);
+}
+.team-ferrari:hover {
+    border-color: #FF0000;
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
+}
+.team-mercedes:hover {
+    border-color: #00A09C;
+    box-shadow: 0 10px 25px rgba(0, 160, 156, 0.4);
+}
+.team-redbull:hover {
+    border-color: #1a2cff;
+    box-shadow: 0 10px 25px rgba(26, 44, 255, 0.4);
+}
+.team-williams:hover {
+    border-color: #005AFF;
+    box-shadow: 0 10px 25px rgba(0, 90, 255, 0.4);
+}
+.team-racingbulls:hover {
+    border-color: #00A0FF;
+    box-shadow: 0 10px 25px rgba(0, 160, 255, 0.4);
+}
+.team-astonmartin:hover {
+    border-color: #006F62;
+    box-shadow: 0 10px 25px rgba(0, 111, 98, 0.4);
+}
+.team-haas:hover {
+    border-color: #AAAAAA; /* Culoare neutră pentru Haas */
+    box-shadow: 0 10px 25px rgba(170, 170, 170, 0.4);
+}
+.team-sauber:hover {
+    border-color: #00FF00;
+    box-shadow: 0 10px 25px rgba(0, 255, 0, 0.4);
+}
+.team-alpine:hover {
+    border-color: #FF00A0; /* Rozul de la BWT */
+    box-shadow: 0 10px 25px rgba(255, 0, 160, 0.4);
+}
+
+/* =================================
+   STILURI HOVER CALENDAR (CU ANIMAȚII)
+   ================================= */
+
+/* --- 1. DEFINIREA ANIMAȚIILOR (KEYFRAMES) --- */
+
+/* Animație pentru steaguri tip Verde-Alb-Roșu (Italia, Mexic, Ungaria) */
+@keyframes animate-gwr {
+    0%, 100% {
+        border-color: #009246; /* Verde */
+        box-shadow: 0 8px 20px rgba(0, 146, 70, 0.35);
+    }
+    33% {
+        border-color: #FFFFFF; /* Alb */
+        box-shadow: 0 8px 20px rgba(255, 255, 255, 0.35);
+    }
+    66% {
+        border-color: #CE2B37; /* Roșu */
+        box-shadow: 0 8px 20px rgba(206, 43, 55, 0.35);
+    }
+}
+
+/* Animație pentru steaguri tip Roșu-Alb-Albastru (Olanda, Marea Britanie, SUA) */
+@keyframes animate-rwb {
+    0%, 100% {
+        border-color: #AE1C28; /* Roșu */
+        box-shadow: 0 8px 20px rgba(174, 28, 40, 0.35);
+    }
+    33% {
+        border-color: #FFFFFF; /* Alb */
+        box-shadow: 0 8px 20px rgba(255, 255, 255, 0.35);
+    }
+    66% {
+        border-color: #0A3161; /* Albastru */
+        box-shadow: 0 8px 20px rgba(10, 49, 97, 0.35);
+    }
+}
+
+/* Animație pentru steaguri tip Roșu-Alb (Japonia, Monaco, Canada, Austria, etc.) */
+@keyframes animate-rw {
+    0%, 100% {
+        border-color: #D52B1E; /* Roșu */
+        box-shadow: 0 8px 20px rgba(213, 43, 30, 0.35);
+    }
+    50% {
+        border-color: #FFFFFF; /* Alb */
+        box-shadow: 0 8px 20px rgba(255, 255, 255, 0.35);
+    }
+}
+
+/* Animație pentru Brazilia (Verde-Galben-Albastru) */
+@keyframes animate-brazil {
+    0%, 100% {
+        border-color: #009B3A; /* Verde */
+        box-shadow: 0 8px 20px rgba(0, 155, 58, 0.35);
+    }
+    33% {
+        border-color: #FFDF00; /* Galben */
+        box-shadow: 0 8px 20px rgba(255, 223, 0, 0.35);
+    }
+    66% {
+        border-color: #002776; /* Albastru */
+        box-shadow: 0 8px 20px rgba(0, 39, 118, 0.35);
+    }
+}
+
+/* **NOU** Animație pentru Azerbaidjan (Albastru-Roșu-Verde) */
+@keyframes animate-azerbaijan {
+    0%, 100% {
+        border-color: #0092BC; /* Albastru */
+        box-shadow: 0 8px 20px rgba(0, 146, 188, 0.35);
+    }
+    33% {
+        border-color: #D52B1E; /* Roșu */
+        box-shadow: 0 8px 20px rgba(213, 43, 30, 0.35);
+    }
+    66% {
+        border-color: #009246; /* Verde */
+        box-shadow: 0 8px 20px rgba(0, 146, 70, 0.35);
+    }
+}
+
+
+/* --- 2. APLICAREA ANIMAȚIILOR LA HOVER --- */
+
+/* Setăm animația la 3 secunde, să ruleze la infinit cât timp ținem mouse-ul */
+.race-item:hover {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Grupăm țările în funcție de animația steagului */
+
+/* Roșu / Alb (majoritatea) */
+.country-red:hover,
+.country-aus:hover { 
+    animation-name: animate-rw;
+}
+
+/* Roșu / Alb / Albastru (SUA, Marea Britanie) */
+.country-blue-us:hover,
+.country-blue-uk:hover,
+.country-orange:hover { 
+    animation-name: animate-rwb;
+}
+
+/* Verde / Alb / Roșu (Italia, Mexic, Ungaria) */
+.country-green-it:hover,
+.country-green-mx:hover {
+    animation-name: animate-gwr;
+}
+
+/* Verde (simplu) */
+.country-green:hover { /* Arabia Saudită */
+    border-color: #006C35;
+    box-shadow: 0 8px 20px rgba(0, 108, 53, 0.35);
+}
+
+/* **MODIFICAT** Albastru / Roșu / Verde (Azerbaidjan) */
+.country-blue-az:hover { 
+    animation-name: animate-azerbaijan;
+}
+
+/* Verde / Galben / Albastru (Brazilia) */
+.country-green-br:hover {
+    animation-name: animate-brazil;
+}
+
+/* Grena (simplu) */
+.country-maroon:hover { /* Qatar */
+    border-color: #8A1538;
+    box-shadow: 0 8px 20px rgba(138, 21, 56, 0.35);
+}
