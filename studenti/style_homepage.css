@@ -85,3 +85,35 @@
     margin-top: 0;
     font-size: 1.5em;
 }
+
+/* Stiluri pentru Cronometru */
+#countdown-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundal semi-transparent */
+    border-radius: 8px;
+    border: 1px solid #ff0000;
+    display: inline-block; /* Să nu ocupe toată lățimea */
+    backdrop-filter: blur(5px); /* Efect modern de sticlă */
+}
+
+#countdown-container p {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    border: 1px solid #ff0000;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    min-width: 300px;
+}
+
+#countdown-timer {
+    margin: 5px 0 0 0;
+    font-size: 2.5em;
+    color: #fff;
+    font-family: 'Courier New', monospace; /* Font de tip digital */
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
