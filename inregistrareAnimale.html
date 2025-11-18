@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare Animale</title>
+    <link rel="stylesheet" href="style_inregistrare.css">
+</head>
+<body>
+
+    <form action="#" method="post" class="formular-inregistrare">
+        <h1>Formular de înregistrare animale</h1>
+
+        <p>Vă rugăm să completați acest formular pentru a înregistra animalul dumneavoastră la clinica noastră veterinară.</p>
+
+        <div class="form-group">
+            <label for="nume-stapan">Nume stăpân:</label>
+            <input type="text" id="nume-stapan" name="nume_stapan" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nume-animal">Nume animal:</label>
+            <input type="text" id="nume-animal" name="nume_animal" required>
+        </div>
+
+        <div class="form-group">
+            <label for="specie">Specie:</label>
+            <select id="specie" name="specie">
+                <option value="caine">Câine</option>
+                <option value="pisica">Pisică</option>
+                <option value="iepure">Iepure</option>
+                <option value="altul">Altul</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Sexul animalului:</label>
+            <div class="radio-group">
+                <input type="radio" id="mascul" name="sex" value="mascul">
+                <label for="mascul">Mascul</label>
+                <input type="radio" id="femela" name="sex" value="femela">
+                <label for="femela">Femelă</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Servicii dorite:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="vaccinare" name="servicii" value="vaccinare">
+                <label for="vaccinare">Vaccinare</label>
+                <input type="checkbox" id="deparazitare" name="servicii" value="deparazitare">
+                <label for="deparazitare">Deparazitare</label>
+                <input type="checkbox" id="consult" name="servicii" value="consult">
+                <label for="consult">Consult</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="observatii">Observații:</label>
+            <textarea id="observatii" name="observatii" rows="4"></textarea>
+        </div>
+
+        <div class="button-group">
+            <button type="submit">Trimite Înregistrarea</button>
+            <button type="reset">Resetează Formularul</button>
+        </div>
+    </form>
+
+</body>
+</html>
