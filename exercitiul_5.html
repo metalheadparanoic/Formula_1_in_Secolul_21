@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 5</title>
+</head>
+<body>
+
+    <h1>Exercitiul 5 - Tipul unui triunghi</h1>
+    <p>Numerele (laturile) sunt introduse direct în codul sursă.</p>
+    <p>Deschide consola (F12) pentru a vedea rezultatul.</p>
+
+    <script>
+        // a) Primește trei numere în cod
+        let l1 = 10;
+        let l2 = 6;
+        let l3 = 8;
+
+        // --- Alte exemple de test ---
+        // Isoscel:
+        // let l1 = 7; let l2 = 7; let l3 = 5;
+        // Oarecare:
+        // let l1 = 3; let l2 = 4; let l3 = 5;
+        // Nu formează un triunghi:
+        // let l1 = 1; let l2 = 2; let l3 = 5;
+
+        console.log(`Laturile introduse sunt: ${l1}, ${l2}, ${l3}`);
+
+        // b) Verifică dacă cele 3 laturi pot forma un triunghi
+        // (Inegalitatea triunghiului: suma oricăror două laturi e mai mare ca a treia)
+        
+        // Prima dată verificăm condiția de bază pentru a fi triunghi
+        if ( (l1 + l2 > l3) && (l1 + l3 > l2) && (l2 + l3 > l1) ) {
+            // Dacă am intrat aici, ȘTIM că ESTE un triunghi.
+            // Acum, trebuie să vedem ce tip este.
+            
+            console.log("Cele 3 laturi POT forma un triunghi.");
+
+            // c) Dacă da, să se afișeze ce tip de triunghi este
+            
+            // Verificăm întâi cazul cel mai specific: Echilateral
+            if (l1 === l2 && l2 === l3) {
+                console.log("Tipul triunghiului este: Echilateral");
+            }
+            // Apoi, verificăm dacă e Isoscel
+            // (oricare două laturi sunt egale, dar NU toate trei, 
+            // deși un echilateral e și isoscel, cerința le vrea separate)
+            else if (l1 === l2 || l1 === l3 || l2 === l3) {
+                console.log("Tipul triunghiului este: Isoscel");
+            }
+            // Dacă nu e nici echilateral, nici isoscel, e Oarecare
+            else {
+                console.log("Tipul triunghiului este: Oarecare");
+            }
+
+        } else {
+            // Dacă nu s-a îndeplinit condiția de la (b)
+            console.log("Cele 3 laturi NU pot forma un triunghi!");
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 3</title>
+</head>
+<body>
+
+    <h1>Exercitiul 3 - Sortare descrescătoare</h1>
+    <p>Cele 3 numere (15, 4, 12) vor fi afișate în ordine descrescătoare în consolă (F12).</p>
+
+    <script>
+        // 1. Numerele introduse în cadrul codului
+        let num1 = 15;
+        let num2 = 4;
+        let num3 = 12;
+
+        console.log(`Numerele inițiale sunt: ${num1}, ${num2}, ${num3}`);
+
+        // 2. Punem numerele într-un array (o listă)
+        let numbers = [num1, num2, num3];
+
+        // 3. Sortăm array-ul în ordine descrescătoare
+        // (b - a) înseamnă sortare descrescătoare
+        // (a - b) ar fi însemnat sortare crescătoare
+        numbers.sort((a, b) => b - a);
+
+        // 4. Afișăm rezultatul în consolă
+        console.log("Numerele în ordine descrescătoare sunt:");
+        
+        // Afișăm array-ul sortat. Consola îl va arăta ca [15, 12, 4]
+        // Dacă vrei să scrie "15, 12, 4", folosim .join()
+        console.log(numbers.join(', '));
+
+    </script>
+
+</body>
+</html>

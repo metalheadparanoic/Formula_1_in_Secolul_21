@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 4</title>
+</head>
+<body>
+
+    <h1>Exercitiul 4 - Laturile unui dreptunghi</h1>
+    <p>Numerele sunt introduse direct în codul sursă.</p>
+    <p>Deschide consola (F12) pentru a vedea rezultatul.</p>
+
+    <script>
+        // 1. Numerele introduse în cadrul codului
+        // (Folosim Exemplul 2 din cerință: 13, 17, 13, 17)
+        let num1 = 25;
+        let num2 = 4;
+        let num3 = 25;
+        let num4 = 16;
+
+        // --- Pentru a testa Exemplul 1, comentează liniile de mai sus ---
+        // --- și decomentează liniile de mai jos: ---
+        // let num1 = 25;
+        // let num2 = 4;
+        // let num3 = 25;
+        // let num4 = 16;
+
+        console.log(`Numerele introduse în cod sunt: ${num1}, ${num2}, ${num3}, ${num4}`);
+
+        // 2. Punem numerele într-un array pentru a le sorta
+        let numbers = [num1, num2, num3, num4];
+
+        // 3. Sortăm array-ul în ordine crescătoare (a - b)
+        // Exemplu: [13, 17, 13, 17] devine [13, 13, 17, 17]
+        numbers.sort((a, b) => a - b);
+
+        // 4. Verificăm logica dreptunghiului
+        // Verificăm dacă prima pereche este egală ȘI a doua pereche este egală
+        // numbers[0] este primul element (cel mai mic)
+        // numbers[1] este al doilea
+        // numbers[2] este al treilea
+        // numbers[3] este al patrulea (cel mai mare)
+        if (numbers[0] === numbers[1] && numbers[2] === numbers[3]) {
+            // DA, este un dreptunghi
+            
+            let latura1 = numbers[0]; // Prima pereche (latura mică)
+            let latura2 = numbers[2]; // A doua pereche (latura mare)
+
+            // Calculăm aria și perimetrul
+            let perimetru = 2 * (latura1 + latura2);
+            let aria = latura1 * latura2;
+
+            // Afișăm rezultatul pozitiv
+            console.log(`Cele 4 numere pot reprezenta laturi ale unui dreptunghi! Perimetrul este: ${perimetru}. Aria este: ${aria}.`);
+            
+        } else {
+            // NU, nu este un dreptunghi
+            
+            // Afișăm rezultatul negativ
+            console.log("Cele 4 numere nu pot reprezenta laturi ale unui dreptunghi!");
+        }
+
+    </script>
+
+</body>
+</html>

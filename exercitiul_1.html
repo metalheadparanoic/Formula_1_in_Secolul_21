@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 1 (Modificat v2)</title>
+</head>
+<body>
+
+    <h1>Exercitiul 1 - Rezolvare</h1>
+    <p>Deschide consola (F12) pentru a vedea rezultatele.</p>
+
+    <script>
+        // -- Cerințele modificate --
+
+        // Creare variabile folosind prompt()
+        let myName = "Tudor";
+        let mySurname = "Nicolae"
+        
+        // La numere, folosim parseInt() pentru a converti textul în număr
+        let myAge = parseInt(prompt("Introdu vârsta ta:"));
+        
+        let studyYear = 3;
+        let myHobby = "mecanica auto";
+
+        // --- AICI ESTE MODIFICAREA ---
+        // Cerem direct diferența de la utilizator
+        let diferentaDeAdaugat = parseInt(prompt("Introdu diferența de vârstă până la 25:"));
+
+        // Aplicăm diferența introdusă
+        myAge += diferentaDeAdaugat; 
+        
+        // Afișare în consolă
+        console.log("\n--- Afișare cu placeholders");
+        // Mesajul va afișa noua vârstă calculată
+        console.log(`Buna! Ma numesc ${mySurname} ${myName} și am ${myAge} ani. Sunt la Universitatea Politehnică Bucuresti, în anul ${studyYear}. Unul dintre hobby-urile mele este ${myHobby}.`);
+
+        // Afișare tipuri de variabile
+        console.log("\n--- Afișare tipuri de variabile ---");
+        console.log(`Tipul variabilei myName este: ${typeof myName}`);
+        console.log(`Tipul variabilei myAge este: ${typeof myAge}`); 
+        console.log(`Tipul variabilei myHobby este: ${typeof myHobby}`);
+
+    </script>
+
+</body>
+</html>
