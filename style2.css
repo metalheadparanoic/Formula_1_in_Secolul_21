@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9ecef;
+    padding-top: 40px;
+}
+
+.produs-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#detalii {
+    margin-top: 15px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Clasa pentru ascundere, folosită în JS [cite: 200, 205] */
+.ascuns {
+    display: none;
+}
+
+.img-produs {
+    max-width: 100%;    /* Imaginea nu va depăși lățimea containerului */
+    height: auto;       /* Păstrează proporțiile imaginii */
+    border-radius: 8px; /* Rotunjește colțurile imaginii */
+    margin: 15px 0;     /* Adaugă spațiu sus și jos */
+    max-height: 250px;  /* (Opțional) Limitează înălțimea dacă poza e prea înaltă */
+    object-fit: cover;  /* (Opțional) Taie imaginea frumos dacă e forțată */
+}
