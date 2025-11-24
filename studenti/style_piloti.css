@@ -16,10 +16,10 @@
     color: #cccccc;
 }
 
-/* Grila de piloți */
 .drivers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* SCHIMBAT: din auto-fit în auto-fill */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 30px;
     padding: 0 50px 50px;
     max-width: 1400px;
@@ -39,6 +39,8 @@
     width: 100%;
     height: 250px;
     object-fit: cover;
+    /* ADĂUGAT: Asta focalizează partea de sus a pozei (capul), nu mijlocul (pieptul) */
+    object-position: top center; 
     display: block;
 }
 
@@ -67,4 +69,35 @@
     font-size: 1em;
     color: #ff0000;
     font-weight: bold;
+}
+
+/* Stiluri pentru Bara de Căutare */
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+#driverSearch {
+    width: 100%;
+    max-width: 500px; /* Să nu fie prea lungă pe ecrane mari */
+    padding: 15px 20px;
+    font-size: 1.1em;
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 30px; /* Rotunjit complet */
+    color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+#driverSearch::placeholder {
+    color: #666;
+}
+
+#driverSearch:focus {
+    border-color: #ff0000; /* Roșu F1 la activare */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transform: scale(1.02); /* Mărește puțin la focus */
 }

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="ro">
 
@@ -13,25 +14,16 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <h1><a href="index.html">F1: Secolul 21</a></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="piloti.html">Piloți</a></li>
-                <li><a href="echipe.html">Echipe</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="pagina_de_login.html" class="login-btn">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include 'header.php'; ?>
 
     <main>
         <div class="page-title">
             <h2>Piloții Sezonului 2025</h2>
             <p>Descoperă protagoniștii de pe grila de start.</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="driverSearch" placeholder="Caută pilot sau echipă... (ex: Lewis, Ferrari)">
         </div>
 
         <div class="drivers-grid">
@@ -260,9 +252,9 @@
 
     </main>
 
-    <footer>
-        <p>&copy; 2025 Formula 1 în Secolul 21. Toate drepturile rezervate.</p>
-    </footer>
+    <?php include 'footer.php'; ?>
+
+    <script src="script.js"></script>
 
 </body>
 

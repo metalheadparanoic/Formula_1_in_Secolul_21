@@ -1,5 +1,7 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="ro">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +13,7 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <h1><a href="index.html">F1: Secolul 21</a></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Acasă</a></li>
-                <li><a href="piloti.html">Piloți</a></li>
-                <li><a href="echipe.html">Echipe</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="pagina_de_login.html" class="login-btn">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include 'header.php'; ?>
 
     <main>
         <div class="page-title">
@@ -146,9 +135,7 @@
 
         </div> </main>
 
-    <footer>
-        <p>&copy; 2025 Formula 1 în Secolul 21. Toate drepturile rezervate.</p>
-    </footer>
+    <?php include 'footer.php'; ?>
 
 </body>
 </html>
