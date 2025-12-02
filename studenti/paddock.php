@@ -45,6 +45,8 @@ if (!isset($_SESSION['user_id'])) {
             background-color: #ff0000;
         }
     </style>
+
+    <link rel="icon" type="image/png" href="imagini/favicon.png">
 </head>
 <body>
 

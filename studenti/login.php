@@ -41,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Pit Stop! Loghează-te</title>
     <link rel="stylesheet" href="f1_style.css"> 
     <link rel="stylesheet" href="stil_general.css">
+    <link rel="icon" type="image/png" href="imagini/favicon.png">
 </head>
 <body>
 

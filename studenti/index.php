@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="stil_general.css">
     <link rel="stylesheet" href="style_homepage.css">
+    <link rel="icon" type="image/png" href="imagini/favicon.png">
 </head>
 
 <body>

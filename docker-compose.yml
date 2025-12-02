@@ -21,7 +21,7 @@ services:
       MYSQL_USER: roacer
       MYSQL_PASSWORD: roacer9053
     ports:
-      - "3307:3307" 
+      - "3307:3306" 
     volumes:
       - db_data:/var/lib/mysql
 
