@@ -69,9 +69,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <button type="submit">Start Race (Login)</button>
             </form>
 
-            <div class="extra-links">
-                <a href="#">Ai uitat Codul de Boxe?</a>
-            </div>
+           <div class="extra-links">
+    <a href="#">Ai uitat Codul de Boxe?</a><br><br>
+    Nu ai cont? <a href="register.php" style="color: #fff; text-decoration: underline;">Înregistrează-te</a>
+</div>
+            
         </div>
     </div>
 

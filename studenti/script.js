@@ -94,3 +94,30 @@ if (searchInput) {
         }
     });
 }
+
+/* =========================================
+   3. BUTON BACK TO TOP (MODERN & SMOOTH)
+   ========================================= */
+
+// Luăm butonul
+const backToTopBtn = document.getElementById("backToTop");
+
+if (backToTopBtn) {
+    
+    // 1. Arată/Ascunde butonul la scroll
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    };
+
+    // 2. Acțiunea de Click (Smooth Scroll)
+    backToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}

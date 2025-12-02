@@ -253,3 +253,37 @@ footer {
     border-color: #8A1538;
     box-shadow: 0 8px 20px rgba(138, 21, 56, 0.35);
 }
+
+/* =================================
+   BUTON BACK TO TOP (FIXED)
+   ================================= */
+#backToTop {
+    display: none; /* Ascuns implicit */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999; /* Z-index foarte mare să fie peste orice */
+    
+    /* Stiluri vizuale */
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px; /* Centrează săgeata vertical */
+    text-align: center;
+    border: none;
+    outline: none;
+    
+    /* Culori forțate */
+    background-color: #ff0000 !important; /* Roșu F1 */
+    color: #ffffff !important; /* Săgeată Albă */
+    
+    cursor: pointer;
+    border-radius: 50%; /* Rotund perfect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #cc0000 !important; /* Roșu închis la hover */
+    transform: translateY(-5px);
+}

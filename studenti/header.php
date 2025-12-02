@@ -10,6 +10,9 @@
             <li><a href="calendar.php">Calendar</a></li>
             
             <?php if (isset($_SESSION['user_id'])): ?>
+                
+                <li><a href="paddock.php" style="color: #FFD700; border-bottom: 1px solid #FFD700;">Paddock Club</a></li>
+
                 <li style="color: #ff0000; font-weight: bold; display: flex; align-items: center;">
                     Salut, <?php echo htmlspecialchars($_SESSION['username']); ?>!
                 </li>
