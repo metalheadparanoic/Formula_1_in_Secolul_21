@@ -61,6 +61,50 @@ if (!isset($_SESSION['user_id'])) {
             </div>
         </section>
 
+        <section class="archive-section" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding: 40px 20px; margin: 40px 0; border-radius: 10px;">
+            <div class="container" style="max-width: 1200px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    
+                    <div>
+                        <h1 style="color: #FFD700; font-size: 3em; margin-bottom: 20px;">
+                            Istoria Formulei 1
+                        </h1>
+
+                        <p style="font-size: 1.2em; line-height: 1.6; color: #ddd; margin-bottom: 30px;">
+                            Explorează istoria unuia dintre cele mai prestigioase sporturi din lume. 
+                            De la debutul erei moderne în 2000 până la zilele noastre, urmărește evoluția 
+                            piloților legendari, echipelor iconice și momentele care au marcat pentru 
+                            totdeauna Formula 1.
+                        </p>
+                        
+                        <a href="arhiva.php" style="display: inline-block; background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%); 
+                           color: white; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; 
+                           margin-top: 20px; transition: transform 0.3s, box-shadow 0.3s;" 
+                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(255,0,0,0.4)';"
+                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                            Intră în Arhivă
+                        </a>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <div style="background: rgba(255,215,0,0.1); border: 2px solid #FFD700; border-radius: 10px; padding: 30px;">
+                            <h3 style="color: #FFD700; font-size: 3em; margin: 0;">25</h3>
+                            <p style="color: #ddd; font-size: 1.2em; margin-top: 10px;">Sezoane Complete</p>
+                            <hr style="border: none; border-top: 1px solid #FFD700; margin: 20px 0;">
+                            <p style="color: #bbb; font-size: 0.9em;">2000 - 2024</p>
+                            <p style="color: #999; font-size: 0.85em; margin-top: 15px;">
+                                Clasamente piloți<br>
+                                Clasamente constructori<br>
+                                Calendare curse<br>
+                                Rezultate complete
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <section class="features">
             <h2 style="color: #FFD700;">Wallpapers 4K Exclusive</h2>
             

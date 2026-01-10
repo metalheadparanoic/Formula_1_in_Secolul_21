@@ -98,8 +98,7 @@
 
                 <div class="driver-card team-redbull">
                     <div class="driver-image">
-                        <img src="imagini/image-3e8b9ed2-4702-43a0-92c6-081ad19b233b-85-2560-1440.jpeg"
-                            alt="Max Verstappen">
+                        <img src="imagini/Verstappen_Redbull.jpg" alt="Max Verstappen">
                     </div>
                     <div class="driver-info">
                         <span class="driver-number">1</span>

@@ -75,7 +75,7 @@ $users = $stmt->fetchAll();
     <main>
         <div class="admin-container">
             <h2 style="color: #ff0000; border-bottom: 2px solid #ff0000; padding-bottom: 10px;">
-                👥 Lista Utilizatori Înregistrați
+                Lista Utilizatori Înregistrați
             </h2>
             
             <p>Total utilizatori: <strong><?php echo count($users); ?></strong></p>

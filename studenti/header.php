@@ -16,6 +16,12 @@
                 <li style="color: #ff0000; font-weight: bold; display: flex; align-items: center;">
                     Salut, <?php echo htmlspecialchars($_SESSION['username']); ?>!
                 </li>
+                
+                <?php if ($_SESSION['username'] === 'admin'): ?>
+                    <li><a href="admin.php" style="color: #00FF00; border-bottom: 1px solid #00FF00;">Admin Curse</a></li>
+                    <li><a href="admin_users.php" style="color: #00FFFF; border-bottom: 1px solid #00FFFF;">Admin Utilizatori</a></li>
+                <?php endif; ?>
+
                 <li><a href="logout.php" class="login-btn" style="background-color: #333; border: 1px solid #555;">Logout</a></li>
             <?php else: ?>
                 <li><a href="login.php" class="login-btn">Login</a></li>
