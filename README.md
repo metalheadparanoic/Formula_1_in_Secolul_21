@@ -2,7 +2,7 @@
 
 ## Descriere Proiect
 
-Website dedicat Formulei 1 moderne, care oferă informații complete despre piloți, echipe, calendarul curselor și statistici istorice. Proiectul include funcționalități de autentificare, panou admin și acces VIP pentru conținut exclusiv.
+Website dedicat Formulei 1 moderne, care oferă informații despre piloți, echipe, calendarul curselor și statistici istorice. Proiectul include funcționalități de autentificare, panou admin și acces VIP pentru conținut exclusiv.
 
 ## Tehnologii Utilizate
 
