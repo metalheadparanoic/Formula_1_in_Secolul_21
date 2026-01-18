@@ -197,7 +197,7 @@ docker-compose up -d
 ## Autor
 
 **Tudor** - Student, Universitatea Politehnica București
-- Facultatea: [Facultatea]
+- [Universitatea Politehnica Bucuresti]
 - An: 3, Semestrul 1
 - Disciplina: Tehnologii Web (TW)
 
