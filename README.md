@@ -171,7 +171,7 @@ docker-compose up -d
 - **Username**: `admin`
 - **Password**: `admin123` (sau conform bazei de date)
 
-## 📱 Pagini Disponibile
+## Pagini Disponibile
 
 | Pagină | URL | Descriere | Acces |
 |--------|-----|-----------|-------|
