@@ -117,3 +117,40 @@
     font-weight: bold;
     text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 900px) {
+
+    .hero {
+        height: auto;       /* Nu mai forțăm 70vh, lăsăm să se adapteze */
+        min-height: 50vh;
+        padding: 60px 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 2em;     /* Titlu mai mic (era 3.5em) */
+        letter-spacing: 1px;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 100%;        /* Butonul ocupă toată lățimea pe mobil */
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .features-container {
+        flex-direction: column; /* Vertical */
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 100%;        /* Ocupă toată lățimea ecranului */
+        max-width: none;    /* Scoatem limita de lățime */
+        margin-bottom: 20px;
+        box-sizing: border-box; /* Include padding-ul în lățime */
+    }
+}

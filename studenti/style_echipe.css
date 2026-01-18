@@ -18,10 +18,10 @@
     color: #cccccc;
 }
 
-/* Grila de echipe */
 .teams-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     padding: 0 50px 50px;
     max-width: 1400px;
@@ -32,17 +32,23 @@
     background-color: #1a1a1a;
     border-radius: 12px;
     overflow: hidden;
-    
-    /* FIX pentru hover-ul colorat (ca la piloti) */
     border-width: 1px;
     border-style: solid;
     border-color: #222;
-    
     padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+/* Ajustare pentru mobil: Când ecranul e mic, flex-wrap le va pune una sub alta */
+@media (max-width: 600px) {
+    .team-card {
+        flex-basis: 100%; /* Pe mobil ocupă tot rândul */
+    }
 }
 
 .team-info {

@@ -1,12 +1,26 @@
 /* =================================
    STIL GENERAL (partajat pe tot site-ul)
    ================================= */
+html {
+    font-size: 100%; /* Setează baza la 16px (standardul browserului) */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
-    color: #ffffff;
+    color: #ffffff; /* Contrast bun (Alb pe Negru) - Cerința 4 */
     margin: 0;
     padding: 0;
+    
+    /* AICI FOLOSIM REM ÎN LOC DE PX */
+    font-size: 1rem;      /* 1rem = 16px (implicit) */
+    line-height: 1.6;     /* Spațiu între rânduri pentru a fi ușor de citit */
+}
+
+img {
+    max-width: 100%;  /* Imaginea nu va depăși niciodată lățimea părintelui */
+    height: auto;     /* Înălțimea se ajustează automat pentru a păstra proporțiile */
+    display: block;   /* Elimină spațiul mic de sub imagini (specific elementelor inline) */
 }
 
 /* Header și Navigație */
@@ -254,36 +268,91 @@ footer {
     box-shadow: 0 8px 20px rgba(138, 21, 56, 0.35);
 }
 
-/* =================================
-   BUTON BACK TO TOP (FIXED)
-   ================================= */
 #backToTop {
-    display: none; /* Ascuns implicit */
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 9999; /* Z-index foarte mare să fie peste orice */
+    display: none;
     
-    /* Stiluri vizuale */
+    /* MODIFICARE AICI: Cerința cere 20px, tu aveai 30px */
+    position: fixed;
+    bottom: 20px;  
+    right: 20px;   
+    
+    z-index: 9999;
     width: 50px;
     height: 50px;
     font-size: 24px;
-    line-height: 50px; /* Centrează săgeata vertical */
-    text-align: center;
     border: none;
     outline: none;
-    
-    /* Culori forțate */
-    background-color: #ff0000 !important; /* Roșu F1 */
-    color: #ffffff !important; /* Săgeată Albă */
-    
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
     cursor: pointer;
-    border-radius: 50%; /* Rotund perfect */
+    border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #backToTop:hover {
     background-color: #cc0000 !important; /* Roșu închis la hover */
     transform: translateY(-5px);
+}
+
+@media screen and (max-width: 900px) {
+    
+    /* Adaptare Fonturi pentru Mobil (Cerința 4) */
+    body {
+        /* Micșorăm puțin textul, dar folosind REM */
+        font-size: 0.95rem; /* Aprox 15px */
+        
+        /* Mărim spațiul între rânduri pentru a fi ușor de citit pe ecrane mici */
+        line-height: 1.7; 
+    }
+
+    /* Adaptare Header */
+    header {
+        flex-direction: column;
+        padding: 0.6rem; /* Folosim rem în loc de 10px */
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem; /* 1rem în loc de 15px */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.6rem;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.8rem; /* Butoane ușor de atins cu degetul */
+        background-color: #222;
+        border-radius: 0.3rem;
+        border: 1px solid #333;
+        font-size: 1.1rem; /* Text mai mare în meniu pentru lizibilitate */
+    }
+
+    /* Asigurăm contrastul culorilor */
+    nav a:hover {
+        background-color: #ff0000;
+        color: #fff; /* Alb pe roșu = Contrast puternic */
+    }
+
+    img {
+        margin: 0 auto; /* Centrează imaginile dacă au display: block */
+    }
+
+    /* Asigurăm centrarea containerelor specifice imaginilor */
+    .driver-image, 
+    .team-car, 
+    .race-track, 
+    .car-image {
+        display: flex;
+        justify-content: center; /* Centrează conținutul flex */
+        margin-bottom: 15px;     /* Puțin spațiu sub imagine */
+        width: 100%;             /* Se asigură că ocupă tot spațiul disponibil */
+    }
 }

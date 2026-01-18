@@ -88,7 +88,9 @@ $races = $races_stmt->fetchAll(PDO::FETCH_ASSOC);
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel - Curse F1</title>
+    <link rel="icon" type="image/png" href="imagini/favicon.png">
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #fff; padding: 20px; color: #333; }
         .container { max-width: 1000px; margin: 0 auto; }
@@ -133,6 +135,10 @@ $races = $races_stmt->fetchAll(PDO::FETCH_ASSOC);
         .alert { padding: 15px; margin-bottom: 20px; border-radius: 4px; text-align: left; border: 1px solid transparent; }
         .success { background: #d4edda; color: #155724; border-color: #c3e6cb; }
         .error { background: #f8d7da; color: #721c24; border-color: #f5c6cb; }
+        
+        /* Buton Back to Top */
+        #backToTop { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 9999; width: 50px; height: 50px; font-size: 24px; border: none; outline: none; background-color: #ff0000 !important; color: #ffffff !important; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: background-color 0.3s, transform 0.3s; display: flex; align-items: center; justify-content: center; }
+        #backToTop:hover { background-color: #cc0000 !important; transform: translateY(-5px); }
     </style>
 </head>
 <body>
@@ -268,5 +274,7 @@ $races = $races_stmt->fetchAll(PDO::FETCH_ASSOC);
 
 </div>
 
+<button id="backToTop" title="Înapoi sus">⬆</button>
+<script src="script.js"></script>
 </body>
 </html>

@@ -17,9 +17,9 @@
 }
 
 .drivers-grid {
-    display: grid;
-    /* SCHIMBAT: din auto-fit în auto-fill */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     padding: 0 50px 50px;
     max-width: 1400px;
@@ -33,13 +33,14 @@
     text-align: center;
     border: 1px solid #222;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    flex: 1 1 300px;
+    max-width: 400px; 
 }
 
 .driver-image img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    /* ADĂUGAT: Asta focalizează partea de sus a pozei (capul), nu mijlocul (pieptul) */
     object-position: top center; 
     display: block;
 }

@@ -40,8 +40,10 @@ $races = $races_stmt->fetchAll(PDO::FETCH_ASSOC);
     <link rel="icon" type="image/png" href="imagini/favicon.png">
     <style>
         body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f3f3; margin: 0; padding: 0; }
-        .header { background: #e10600; color: white; padding: 20px; text-align: center; }
+        .header { background: #e10600; color: white; padding: 20px; text-align: center; position: relative; }
         .header h1 { margin: 0; font-style: italic; }
+        .back-button { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: white; color: #e10600; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 0.3s; }
+        .back-button:hover { background: #333; color: white; }
         .year-selector { margin: 20px auto; text-align: center; }
         select { padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc; }
         button { padding: 10px 20px; font-size: 16px; background: #333; color: white; border: none; border-radius: 5px; cursor: pointer; }
@@ -59,11 +61,16 @@ $races = $races_stmt->fetchAll(PDO::FETCH_ASSOC);
         .pos-1 { background-color: #fff8e1; font-weight: bold; }
         .pos-2 { background-color: #f5f5f5; }
         .pos-3 { background-color: #fff3e0; }
+        
+        /* Buton Back to Top */
+        #backToTop { display: none; position: fixed; bottom: 30px; right: 30px; z-index: 9999; width: 50px; height: 50px; font-size: 24px; border: none; outline: none; background-color: #ff0000 !important; color: #ffffff !important; cursor: pointer; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.5); transition: background-color 0.3s, transform 0.3s; display: flex; align-items: center; justify-content: center; }
+        #backToTop:hover { background-color: #cc0000 !important; transform: translateY(-5px); }
     </style>
 </head>
 <body>
 
 <div class="header">
+    <a href="index.php" class="back-button">← Înapoi la site</a>
     <h1>Istoria Formulei 1</h1>
 </div>
 
@@ -188,5 +195,7 @@ $races = $races_stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </div>
 
+<button id="backToTop" title="Înapoi sus">⬆</button>
+<script src="script.js"></script>
 </body>
 </html>

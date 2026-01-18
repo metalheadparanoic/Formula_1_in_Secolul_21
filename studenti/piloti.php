@@ -54,7 +54,7 @@
 
             <div class="driver-card team-ferrari">
                 <div class="driver-image">
-                    <img src="imagini/GettyImages-2236088703.avif" alt="Lewis Hamilton">
+                    <img src="imagini/Hamilton_Ferrari.png" alt="Lewis Hamilton">
                 </div>
                 <div class="driver-info">
                     <span class="driver-number">44</span>

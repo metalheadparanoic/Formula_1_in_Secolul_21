@@ -94,5 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
     </div>
 
+    <button id="backToTop" title="Înapoi sus">⬆</button>
+    <script src="script.js"></script>
 </body>
 </html>
